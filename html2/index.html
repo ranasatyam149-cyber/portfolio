@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Satyam Rana | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4b4b1b4b4b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="particles-js"></div>
+
+<div class="container">
+
+    <!-- Sidebar -->
+     <div class="menu-toggle">☰</div>
+    <aside class="sidebar">
+        <h2>Satyam's Portfolio</h2>
+        <nav>
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#services" class="nav-link">Skills</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+        <p class="copyright">© 2026 Satyam Rana</p>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <!-- Home -->
+        <section id="home" class="section home">
+            <div class="home-text">
+                <h4>WELCOME TO MY PORTFOLIO</h4>
+                <h1>Hi, My name is <span>Satyam Rana</span></h1>
+                <h3>I am a <span id="typing"></span></h3>                <div class="buttons">
+                    <a href="#projects" class="btn primary">View Projects</a>
+                    <a href="#contact" class="btn">Contact Me</a>
+                </div>
+            </div>
+            <div class="home-img">
+                <img src="portfolio.jpeg" alt="Profile">
+            </div>
+        </section>
+
+        <!-- About -->
+<section class="about" id="about">
+    <h2 class="section-title">About <span>Me</span></h2>
+
+    <div class="about-container">
+        
+        <div class="about-image">
+            <img src="portfolio.jpeg" alt="Profile Photo">
+        </div>
+
+        <div class="about-content">
+            <p>
+                I'm a passionate Software Developer currently pursuing my 
+                <strong>B.Tech in Computer Science & Engineering (Data Science)</strong>. 
+                I love building modern, responsive, and user-friendly web applications 
+                that solve real-world problems.
+            </p>
+
+            <p>
+                My goal is to become a full-stack developer who can create end-to-end 
+                solutions that are both performant and beautiful. I'm always eager to 
+                learn new technologies and take on challenging projects.
+            </p>
+
+            <div class="skills">
+                <span>React</span>
+                <span>JavaScript</span>
+                <span>Node.js</span>
+                <span>Python</span>
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>MongoDB</span>
+                <span>SQL</span>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+        <!-- Services -->
+        <section id="services" class="section">
+            <h2>My <span>Skills</span></h2>
+            <div class="progress-container">
+    <div class="progress">
+        <span>HTML & CSS</span>
+        <div class="bar"><div class="fill" style="width: 70%"></div></div>
+    </div>
+
+    <div class="progress">
+        <span>JavaScript</span>
+        <div class="bar"><div class="fill" style="width: 50%"></div></div>
+    </div>
+
+    <div class="progress">
+        <span>Python</span>
+        <div class="bar"><div class="fill" style="width: 60%"></div></div>
+    </div>
+
+    <div class="progress">
+        <span>SQL</span>
+        <div class="bar"><div class="fill" style="width: 70%"></div></div>
+    </div>
+
+    <div class="progress">
+        <span>MongoDB</span>
+        <div class="bar"><div class="fill" style="width: 30%"></div></div>
+    </div>
+
+    <div class="progress">
+        <span>React</span>
+        <div class="bar"><div class="fill" style="width: 30%"></div></div>
+    </div>
+</div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="section">
+            <h2>My <span>Projects</span></h2>
+            <div class="grid">
+                <div class="box">
+                    <h3>E-Commerce Platform</h3>
+                    <p>Full-stack store with cart and admin dashboard.</p>
+                </div>
+                <div class="box">
+                    <h3>Task Manager App</h3>
+                    <p>Productivity app with drag and drop features.</p>
+                </div>
+                <div class="box">
+                    <h3>Weather Dashboard</h3>
+                    <p>Real-time weather data using API.</p>
+                </div>
+                <div class="box">
+                    <h3>Portfolio Website</h3>
+                    <p>Modern responsive portfolio using React.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="section">
+            <h2>Contact <span>Me</span></h2>
+            <form id="contactForm">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn primary">Send Message</button>
+            </form>
+            <p>Email: rsatyam9195@gmail.com</p>
+        </section>
+
+    </main>
+</div>
+
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script>
+particlesJS("particles-js", {
+  particles: {
+    number: { value: 70 },
+    size: { value: 3 },
+    color: { value: "#3b82f6" },
+    line_linked: {
+      enable: true,
+      color: "#3b82f6"
+    },
+    move: {
+      speed: 2
+    }
+  },
+  interactivity: {
+    events: {
+      onhover: { enable: true, mode: "repulse" }
+    }
+  }
+});
+</script>
+</body>
+</html>
